@@ -48,7 +48,6 @@ body {
   margin-top: 70px; /* ajusta: 5px, 10px, 12px */
 }
 
-
 /* ANUNCIOS */
 .header-anuncio {
   flex: 1;
@@ -175,9 +174,8 @@ body {
   opacity: 0.9;
 }
 
-
 /* =================================================
-   PANTALLAS GRANDES (TV)
+   PANTALLAS GRANDES (TV / PC)
 ================================================= */
 @media (min-width: 1600px) {
   :root {
@@ -206,9 +204,44 @@ body {
 }
 
 /* =================================================
+   TABLET
+================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    --header-height: 220px;
+    --ticker-height: 75px;
+  }
+
+  .logo {
+    width: 300px;
+    margin-top: 50px;
+  }
+
+  .header-anuncio {
+    font-size: 28px;
+  }
+
+  .bolo {
+    width: 90px;
+    height: 90px;
+    font-size: 34px;
+  }
+
+  .hora,
+  .fecha {
+    font-size: 24px;
+  }
+
+  #pizarra {
+    padding: 20px 30px;
+    gap: 30px;
+  }
+}
+
+/* =================================================
    MÓVIL
 ================================================= */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   :root {
     --header-height: 240px;
   }
@@ -228,3 +261,4 @@ body {
     font-size: 26px;
   }
 }
+
