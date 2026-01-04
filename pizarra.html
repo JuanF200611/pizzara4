@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Anguilla Express</title>
+
+  <!-- RESPONSIVE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/pizarra.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <img src="assets/logo.png" class="logo" alt="Anguilla Express">
+    </div>
+
+    
+  </header>
+
+  <!-- PIZARRA -->
+  <main id="pizarra"></main>
+
+  <!-- CINTA -->
+  <div class="ticker">
+    <div id="ticker-content"></div>
+  </div>
+
+  <!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script>
+  var firebaseConfig = {
+    databaseURL: "https://pizarra-loteria-36ba5-default-rtdb.firebaseio.com/"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+  <!-- SCRIPTS -->
+  <script src="js/data.js"></script>
+  <script src="js/pizarra.js"></script>
+
+</body>
+</html>
